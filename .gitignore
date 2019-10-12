@@ -1,0 +1,5 @@
+model_saves
+gym-results
+bin
+.vscode
+__pycache__
