@@ -7,4 +7,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD [ "python", "-m pacman.v7" ]
+CMD [ "python", "pacman/v7.py" ]
