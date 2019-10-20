@@ -91,7 +91,7 @@ if args.mode == 'train':
     weights_filename = folder_path + 'final_noisynet_nstep_pdd_dqn_{}_weights.h5f'.format(args.env_name)
     checkpoint_weights_filename = folder_path + 'final_noisynet_nstep_pdd_dqn_' + args.env_name + '_weights_{step}.h5f'
     log_filename = folder_path + 'final_noisynet_nstep_pdd_dqn_' + args.env_name + '_REWARD_DATA.txt'
-    callbacks = [ModelIntervalCheckpoint(checkpoint_weights_filename, interval=100000)]
+    callbacks = [ModelIntervalCheckpoint(checkpoint_weights_filename, interval=10000)]
     callbacks += [TrainEpisodeLogger(log_filename)]
     dqn.fit(env, callbacks=callbacks, nb_steps=10000000, verbose=0, nb_max_episode_steps=20000)
 
