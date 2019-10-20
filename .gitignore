@@ -3,3 +3,4 @@ gym-results
 bin
 .vscode
 __pycache__
+env
