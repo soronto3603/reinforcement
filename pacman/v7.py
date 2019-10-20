@@ -85,6 +85,7 @@ dqn.compile(Adam(lr=.00025/4), metrics=['mae'])
 
 folder_path = 'model_saves/v7/'
 if not os.path.exists(folder_path):
+    print('mkdir outputs')
     os.makedirs(folder_path)
 
 if args.mode == 'train':
